@@ -1,3 +1,6 @@
+import htn_pyramids from './htn_pyramids.jpg'
+import lake from './htn_moraine_lake.jpg'
+import temple from './htn_senso_ji_temple.jpeg'
 import React from 'react';
 import Sidebar from './sidebar';
 import SearchBar from './searchbar';
@@ -20,9 +23,9 @@ const App = () => {
 		</div>
 
 		<div>
-		<img class="lake" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_moraine_lake.jpg"></img>
-		<img class="pyramids" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_pyramids.jpg"></img>
-		<img class="temple" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_senso_ji_temple.jpeg"></img>
+		<img class="main-img" src={htn_pyramids} alt='pyramids with a sphinx'></img>
+		<img class="main-img" src={lake} alt='beautiful lake'></img>
+		<img class="main-img" src={temple} alt='awesome temple'></img>
 
 		</div>
 
