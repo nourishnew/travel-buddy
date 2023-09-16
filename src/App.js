@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 function App() {
+
+
 	function sendRequest() {
 		axios
 			.post(
@@ -25,22 +27,22 @@ function App() {
 			});
 	}
 
-	function imageUploaded() {
-		let file = document.querySelector("input[type=file]")["files"][0];
-		let base64String = "";
-		let reader = new FileReader();
-		console.log("next");
+// 	function imageUploaded() {
+// 		let file = document.querySelector("input[type=file]")["files"][0];
+// 		let base64String = "";
+// 		let reader = new FileReader();
+// 		console.log("next");
 
-		reader.onload = function () {
-			base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
-			console.log(base64String);
-		};
-		reader.readAsDataURL(file);
-  }
+// 		reader.onload = function () {
+// 			base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
+// 			console.log(base64String);
+// 		};
+// 		reader.readAsDataURL(file);
+//   }
   
 	return (
-		<div className="App">
-			<header className="App-header">
+		<div>
+			<header>
 				<input type="file" name="" id="fileId" onchange="imageUploaded()" />
 				<button onclick="displayString()">Display String</button>
 
@@ -55,9 +57,22 @@ function App() {
 					Learn React
 				</a>
 			</header>
+
+			<MyButton />
+			<MyButton />
+			<MyButton />
+			<MyButton />
+
+
 			<button onClick={() => sendRequest()}> send</button>
 		</div>
 	);
 }
+
+function MyButton() {
+	return (
+	  <button>I'm a button</button>
+	);
+  }
 
 export default App;
