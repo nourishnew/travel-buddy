@@ -8,7 +8,28 @@ const App = () => {
     <div className="App">
       <Sidebar />
       <SearchBar />
-      {/* Your main content goes here */}
+      
+	<body>
+		<div class="center-box">
+		<h1 class="main-title">WELCOME!</h1>
+
+		<h2>The world's landmarks at your fingertips, compiled with LLM's to produce thought-provoking captions and journals!</h2>
+
+		<button>Login</button>
+		<button>Sign Up</button>
+		</div>
+
+		<div>
+		<img class="lake" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_moraine_lake.jpg"></img>
+		<img class="pyramids" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_pyramids.jpg"></img>
+		<img class="temple" src="C:\Users\Sameer\Desktop\HTN\TravelBuddyFiles\travel-buddy\src\images\htn_senso_ji_temple.jpeg"></img>
+
+		</div>
+
+	</body>
+	  
+
+
     </div>
   );
 }

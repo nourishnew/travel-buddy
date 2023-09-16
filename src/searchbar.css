@@ -2,11 +2,11 @@
 
 .search-bar {
     position: fixed;
-    top: 15%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center; /* Vertically center input and button */
