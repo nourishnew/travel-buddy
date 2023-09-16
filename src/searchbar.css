@@ -1,30 +1,36 @@
+/* SearchBar.css */
+
 .search-bar {
     position: fixed;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    border-radius: 20px; /* Rounded corners */
+    align-items: center; /* Vertically center input and button */
+    border-radius: 30px; /* Increased border-radius for smoother corners */
   }
   
   input[type="text"] {
-    width: 300px; /* Larger width */
+    flex-grow: 1; /* Allows the input to grow and take available space */
+    height: 40px; /* Increased height for a nicer look */
     padding: 10px; /* Larger padding */
     border: none;
     outline: none;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
   }
   
   button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px; /* Larger padding */
+    padding: 12px 24px; /* Slightly larger padding */
     cursor: pointer;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
   }
   
   /* Hover effect for the button */
