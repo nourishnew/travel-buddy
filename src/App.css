@@ -111,8 +111,10 @@ h3 {
 	margin-top: 2em;
 }
 .result {
-	width: 75%;
+	width: 50%;
 	margin: auto;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 .secondary-img-group {

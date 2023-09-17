@@ -10,12 +10,14 @@ import SearchBar from "./searchbar";
 import "./App.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Circles } from "react-loading-icons";
 
 const App = () => {
 	const [inputText, setInputText] = useState("");
 	const [result, setResult] = useState([]);
 	const [selectedFiles, setSelectedFiles] = useState(null);
 	const [promptText, setPromptText] = useState("");
+	const [loading, setLoading] = useState(false);
 	const options = {
 		method: "POST",
 		url: "https://api.cohere.ai/v1/generate",
@@ -37,6 +39,7 @@ const App = () => {
 		if (promptText.length > 5) {
 			axios.request(options).then((response) => {
 				setResult(response.data.generations[0].text);
+				setLoading(false);
 			});
 		}
 	}, [promptText]);
@@ -62,12 +65,14 @@ const App = () => {
 		await axios.get("http://localhost:5000/description").then((res) => {
 			let des = res.data;
 			console.log(res);
-			let prompt = "Here are the descriptions of the images I visited. ";
+			let prompt =
+				"Here are the descriptions of the images I visited and activities I have done. ";
 			for (let i = 0; i < des.length; i++) {
 				prompt += des[i];
 				prompt += " ";
 			}
-			prompt += ".Write a 200 word journal about the places i visited.";
+			prompt +=
+				"in first person, Write a 100 word detailed journal about the trips. Have as many paragraphs as the the number of image descriptions";
 			console.log(prompt);
 			setPromptText(prompt);
 		});
@@ -92,6 +97,7 @@ const App = () => {
 	}
 
 	async function getJournal() {
+		setLoading(true);
 		await getDescription();
 		setResult([]);
 		console.log("Getting journal...");
@@ -189,19 +195,20 @@ const App = () => {
 			</div>
 			<div className="flex-column">
 				<p>Add a trip here</p>
-				<button
-					className="mainbutton2"
-					onClick={() => {
-						backend();
-					}}>
-					Upload the images of your trip in the chronological order
-				</button>
 				<input
 					className="input"
 					type="file"
 					multiple
 					onChange={handleFileInputChange}
 				/>
+				<button
+					className="mainbutton2"
+					style={{ backgroundColor: "#d76463" }}
+					onClick={() => {
+						backend();
+					}}>
+					Upload the images of your trip in the chronological order
+				</button>
 
 				<button
 					className="mainbutton2"
@@ -210,6 +217,17 @@ const App = () => {
 					}}>
 					Generate the story of your trip
 				</button>
+				{loading ? (
+					<Circles
+						style={{
+							margin: "auto",
+							backgroundColor: "#d76463",
+							borderradius: "45px",
+							height: "75px",
+							width: "75px",
+						}}
+					/>
+				) : null}
 			</div>
 			<p className="result">{result}</p>
 		</div>
