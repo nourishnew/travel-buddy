@@ -22,16 +22,27 @@ const App = () => {
 		<div class="center-box">
 		<h1 class="main-title">Welcome Noma-d</h1>
 
-		<h2>The world's landmarks at YOUR fingertips, compiled with LLM's to produce thought-provoking captions and journals!</h2>
+		<h2>The world's landmarks at YOUR fingertips, your uploaded pictures are compiled with LLM's to produce thought-provoking captions and journals!</h2>
 
 		<button class = "mainbutton">Login</button>
 		<button class = "mainbutton">Sign Up</button>
 		</div>
 
 		<div class="main-img-group">
+		<div>
 		<img class="main-img" src={temple} alt='awesome temple'></img>
+		<h3>"A tranquil oasis in the heart of bustling Tokyo, perfect for quiet moments together."</h3>
+		</div>
+		
+		<div>
 		<img class="main-img" src={htn_pyramids} alt='pyramids with a sphinx'></img>
+		<h3>"A dream fulfilled: Giza's Pyramids, where history whispers in every stone."</h3>
+		</div>
+		
+		<div>
 		<img class="main-img" src={lake} alt='beautiful lake'></img>
+		<h3> "A rendezvous with the Rockies at Moraine Lake, where every view is a masterpiece."</h3>
+		</div>
 
 		{/* Some text under here */}
 		</div>

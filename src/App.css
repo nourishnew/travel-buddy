@@ -28,6 +28,10 @@ body{
   font-family: 'Inclusive Sans', sans-serif;
 }
 
+h3{
+  color: #D5603F;
+  font-family: 'Inclusive Sans', sans-serif;
+}
 .main-img-group{
   display: flex;
   position:relative;
