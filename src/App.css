@@ -1,131 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Inclusive+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Inclusive+Sans&display=swap");
 
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-
-body{
-  background-color: #FFF6EE;
+body {
+	background-color: #fff6ee;
 }
 
-h1{
-  font-family: 'Bricolage Grotesque', sans-serif;
-  color: #A53258;
+h1 {
+	font-family: "Bricolage Grotesque", sans-serif;
+	color: #a53258;
 }
 
-h2{
-  font-family: 'Inclusive Sans', sans-serif;
-  color: #D5603F;
+h2 {
+	font-family: "Inclusive Sans", sans-serif;
+	color: #d5603f;
 }
 
-h3{
-  color: #D5603F;
-  font-family: 'Inclusive Sans', sans-serif;
+h3 {
+	color: #d5603f;
+	font-family: "Inclusive Sans", sans-serif;
 }
 
-
-.main-title{
-  margin-top:20%;
-  size: 2em;
+.main-title {
+	margin-top: 20%;
+	size: 2em;
 }
 
-.center-box { 
-  max-width: 450px; 
-  margin: 0 15%; 
-  text-align: center;
-  border-radius: 10px;
-  background-color: #FFF6EE;
-  
+.center-box {
+	max-width: 450px;
+	margin: 0 15%;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #fff6ee;
 }
 
-h3{
-  color: #D5603F;
-  font-family: 'Inclusive Sans', sans-serif;
+h3 {
+	color: #d5603f;
+	font-family: "Inclusive Sans", sans-serif;
 }
-.main-img-group{
-  display: flex;
-  position:relative;
-  padding: 15px;
-  top:20px;
-  margin: 15%;
-  right:100px;
-  width: 100%; 
-  max-width: 800px; 
-  margin: 0 auto;
-
+.main-img-group {
+	display: flex;
+	position: relative;
+	padding: 15px;
+	top: 20px;
+	margin: 15%;
+	right: 100px;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .main-img {
-  width: 250px; /* Adjust the image size as needed */
-  height: 400px;
-  margin: 1em; /* Adjust the margin to control the spacing */
-  text-align: center;
-  border-radius: 10px;
+	width: 250px; /* Adjust the image size as needed */
+	height: 400px;
+	margin: 1em; /* Adjust the margin to control the spacing */
+	text-align: center;
+	border-radius: 10px;
 }
 
 .image img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	border-radius: 50%;
 }
 
-.combined-container{
-  display:flex;
-  flex-direction: row;
+.combined-container {
+	display: flex;
+	flex-direction: row;
 }
-
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
 
 .mainbutton {
-  background-color: #A53258;
-  color: #FFFFFF;
-  padding: 12px 24px; 
-  font-size: 16px; 
-  border: none;
-  border-radius: 5px; 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin:1em; 
+	background-color: #a53258;
+	color: #ffffff;
+	padding: 12px 24px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: 1em;
+}
+.mainbutton2 {
+	background-color: #a53258;
+	color: #ffffff;
+	padding: 12px 24px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: auto;
+	margin-top: 1em;
+	width: 25%;
 }
 
 .mainbutton:hover {
-  background-color: #A53258;
+	background-color: #a53258;
+}
+.input {
+	width: 25%;
+	margin: auto;
+	margin-top: 2em;
+}
+.result {
+	width: 75%;
+	margin: auto;
 }
 
-.secondary-img-group{
-  display:flex;
-  position:relative;
-  right:100px;
-  width:50%;
-  margin:auto;
-
+.secondary-img-group {
+	display: flex;
+	position: relative;
+	right: 100px;
+	width: 50%;
+	margin: auto;
 }
 
-.secondary-img{
-  margin:2em;
-  width:250px;
-  height:250px;
-  padding: 20px;
+.secondary-img {
+	margin: 2em;
+	width: 250px;
+	height: 250px;
+	padding: 20px;
 }
 
-.box1{
-border:#A53258 20px;
+.box1 {
+	border: #a53258 20px;
 }
 
-.box2{
-
+.box2 {
 }
 
-.box3{
-
-
+.box3 {
 }
-.values-title{
-  position:relative;
-  margin-left:0 ;
-  color: #A53258;
-  font-family: 'Bricolage Grotesque', sans-serif;
+.values-title {
+	position: relative;
+	margin-left: 0;
+	color: #a53258;
+	font-family: "Bricolage Grotesque", sans-serif;
 }
