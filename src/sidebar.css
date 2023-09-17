@@ -12,9 +12,19 @@
 
 
 
-  button{
-    margin:1em;
-    border-radius:10px;
+  .homebuttons {
+    background-color: #A53258;
+    color: #FFFFFF;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .homebuttons:hover {
+    background-color: #A53258; /* Darker color on hover */
   }
 
 
@@ -45,4 +55,5 @@
   .nav-links li:hover {
     background-color: #333; /* Darker background on hover */
   }
+  
   
