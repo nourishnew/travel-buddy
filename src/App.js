@@ -9,12 +9,12 @@ import Sidebar from './sidebar';
 import SearchBar from './searchbar';
 import './App.css';
 
+
 const App = () => {
   return (
     <div className="App">
       {/* cool functions!! */}
 	  <Sidebar />
-      <SearchBar />
       
 	<body>
 		
@@ -43,16 +43,21 @@ const App = () => {
 		<img class="main-img" src={lake} alt='beautiful lake'></img>
 		<h3> "A rendezvous with the Rockies at Moraine Lake, where every view is a masterpiece."</h3>
 		</div>
-
+		<SearchBar />
 		{/* Some text under here */}
 		</div>
 		</div>
 
+		<div class="values-block">
+
+		<h1 class="values-title">Our Values</h1>
 
 		<div class="secondary-img-group">
 		<img class="secondary-img" src={GIC2} alt='generate/inspire/connect'></img>
 		<img class="secondary-img" src={GIC} alt='generate/inspire/connect'></img>
 		<img class="secondary-img"src={GIC1} alt='generate/inspire/connect'></img>
+
+		</div>
 
 		</div>
 
