@@ -18,28 +18,27 @@ const App = () => {
       
 	<body>
 		<div class="center-box">
-		<h1 class="main-title">WELCOME!</h1>
+		<h1 class="main-title">Welcome Noma-d 	</h1>
 
-		<h2>The world's landmarks at your fingertips, compiled with LLM's to produce thought-provoking captions and journals!</h2>
+		<h2>The world's landmarks at YOUR fingertips, compiled with LLM's to produce thought-provoking captions and journals!</h2>
 
 		<button>Login</button>
 		<button>Sign Up</button>
 		</div>
 
-		<div>
+		<div class="main-img-group">
+		<img class="main-img" src={temple} alt='awesome temple'></img>
 		<img class="main-img" src={htn_pyramids} alt='pyramids with a sphinx'></img>
 		<img class="main-img" src={lake} alt='beautiful lake'></img>
-		<img class="main-img" src={temple} alt='awesome temple'></img>
 
 		{/* Some text under here */}
 		</div>
 
 
 		<div>
+		<img class="secondary-img" src={GIC2} alt='generate/inspire/connect'></img>
 		<img class="secondary-img" src={GIC} alt='generate/inspire/connect'></img>
 		<img class="secondary-img"src={GIC1} alt='generate/inspire/connect'></img>
-		<img class="secondary-img" src={GIC2} alt='generate/inspire/connect'></img>
-
 
 		</div>
 

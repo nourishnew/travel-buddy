@@ -1,45 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Inclusive+Sans&display=swap');
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  background-color: #FFF6EE;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link {
-  color: #61dafb;
-}
-
-/* could use this for our logo or like the upload button make it kinda cool like a popup!!*/
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .main-title{
   margin-top:20%;
+  color: #A53258;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .center-box {
@@ -48,17 +24,43 @@
   margin: 0 15%; 
   padding: 10px; 
   text-align: center;
-  border: 2px solid #333;
   border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #FFF6EE;
+  color: #D5603F;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
-.main-img{
-  max-width: 100px;
+.main-img-group{
+  display: flex;
+  justify-content: space-around; /* Adjust to 'space-between' for more spacing between images */
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
 
+}
+
+.main-img {
+  height: 300px;
+  align-items: right;
+  border-radius:10px;
 }
 
 .secondary-img{
   max-width: 100px;
+}
+
+
+.main-image {
+  width: 100px; /* Adjust the image size as needed */
+  height: 100px;
+  margin: 0 20px; /* Adjust the margin to control the spacing */
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 50%;
 }

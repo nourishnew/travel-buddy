@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
-      <div className="logo">ROAMR</div>
+      <div className="logo">NOMA</div>
       <ul className="nav-links">
         <button className='homebuttons'><li>Home</li></button>
         <button className='homebuttons'><li>Feed</li></button>
