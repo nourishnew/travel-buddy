@@ -17,7 +17,7 @@ const Sidebar = () => {
       NOMA
       </div>
       <ul className="nav-links">
-        <button href= 'App.js' className='homebuttons'><li>Home</li></button>
+        <button className='homebuttons'><li>Home</li></button>
         <button className='homebuttons'><li>Feed</li></button>
         <button className='homebuttons'><li>Notifications</li></button>
         <button className='homebuttons'><li>Messages</li></button>

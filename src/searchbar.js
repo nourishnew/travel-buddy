@@ -5,7 +5,7 @@ const SearchBar = () => {
   return (
     <div className="search-bar-container">
       <div className="search-bar">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Search for tags..." />
         <button>Search</button>
       </div>
     </div>

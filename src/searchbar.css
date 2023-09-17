@@ -1,4 +1,4 @@
-/* SearchBar.css */
+SearchBar.css
 .homebuttons {
   background-color: #A53258;
   color: #FFFFFF;
@@ -14,13 +14,10 @@
   background-color: #A53258;
 }
 
-
-
-
 .search-bar {
     z-index:7;
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFFFFF;
@@ -32,13 +29,13 @@
   }
   
   input[type="text"] {
-    flex-grow: 1; /* Allows the input to grow and take available space */
-    height: 40px; /* Increased height for a nicer look */
-    padding: 10px; /* Larger padding */
+    flex-grow: 1;
+    height: 40px; 
+    padding: 10px; 
     border: none;
     outline: none;
-    border-radius: 30px; /* Rounded corners */
-    font-size: 16px; /* Increased font size */
+    border-radius: 30px; 
+    font-size: 16px; 
   }
   
   button {
