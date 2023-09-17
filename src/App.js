@@ -53,9 +53,23 @@ const App = () => {
 		<h1 class="values-title">Our Values</h1>
 
 		<div class="secondary-img-group">
+		<div class="box1">
+		<h1>Generate</h1>
 		<img class="secondary-img" src={GIC2} alt='generate/inspire/connect'></img>
+		<h3>Generate context-specific and thrilling captions and journals to users' exciting travel photos!</h3>
+		</div>
+
+		<div>
+		<h1>Inspire</h1>
 		<img class="secondary-img" src={GIC} alt='generate/inspire/connect'></img>
+		<h3>Inspire users to visit monuments and landmarks they have dreamt of seeing with their own eyes!</h3>
+		</div>
+		
+		<div>
+		<h1>Connect</h1>
 		<img class="secondary-img"src={GIC1} alt='generate/inspire/connect'></img>
+		<h3>Connect users with similar passions and interests together!</h3>
+		</div>
 
 		</div>
 

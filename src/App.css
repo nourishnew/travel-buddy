@@ -11,10 +11,24 @@ body{
   background-color: #FFF6EE;
 }
 
+h1{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #A53258;
+}
+
+h2{
+  font-family: 'Inclusive Sans', sans-serif;
+  color: #D5603F;
+}
+
+h3{
+  color: #D5603F;
+  font-family: 'Inclusive Sans', sans-serif;
+}
+
+
 .main-title{
   margin-top:20%;
-  color: #A53258;
-  font-family: 'Bricolage Grotesque', sans-serif;
   size: 2em;
 }
 
@@ -24,8 +38,7 @@ body{
   text-align: center;
   border-radius: 10px;
   background-color: #FFF6EE;
-  color: #D5603F;
-  font-family: 'Inclusive Sans', sans-serif;
+  
 }
 
 h3{
@@ -98,10 +111,21 @@ h3{
   padding: 20px;
 }
 
+.box1{
+border:#A53258 20px;
+}
 
+.box2{
+
+}
+
+.box3{
+
+
+}
 .values-title{
   position:relative;
   margin-left:0 ;
   color: #A53258;
-  font-family: 'Bricolage Grotesque', sans-serif
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
