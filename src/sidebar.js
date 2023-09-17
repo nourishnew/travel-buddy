@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './sidebar.css';
+import NOMA from './noma logo inverted.png';
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -11,7 +12,10 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
-      <div className="logo">NOMA</div>
+      <div className="logo">
+      <img class="brand-logo" src={NOMA} alt='our logo!'></img>
+      NOMA
+      </div>
       <ul className="nav-links">
         <button className='homebuttons'><li>Home</li></button>
         <button className='homebuttons'><li>Feed</li></button>
