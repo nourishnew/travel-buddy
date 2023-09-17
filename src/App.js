@@ -1,6 +1,9 @@
 import htn_pyramids from './htn_pyramids.jpg'
 import lake from './htn_moraine_lake.jpg'
 import temple from './htn_senso_ji_temple.jpeg'
+import GIC from './GIC.png'
+import GIC1 from './GIC1.png'
+import GIC2 from './GIC2.png'
 import React from 'react';
 import Sidebar from './sidebar';
 import SearchBar from './searchbar';
@@ -9,7 +12,8 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <Sidebar />
+      {/* cool functions!! */}
+	  <Sidebar />
       <SearchBar />
       
 	<body>
@@ -26,6 +30,16 @@ const App = () => {
 		<img class="main-img" src={htn_pyramids} alt='pyramids with a sphinx'></img>
 		<img class="main-img" src={lake} alt='beautiful lake'></img>
 		<img class="main-img" src={temple} alt='awesome temple'></img>
+
+		{/* Some text under here */}
+		</div>
+
+
+		<div>
+		<img class="secondary-img" src={GIC} alt='generate/inspire/connect'></img>
+		<img class="secondary-img"src={GIC1} alt='generate/inspire/connect'></img>
+		<img class="secondary-img" src={GIC2} alt='generate/inspire/connect'></img>
+
 
 		</div>
 

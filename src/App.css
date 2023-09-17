@@ -27,6 +27,8 @@
   color: #61dafb;
 }
 
+/* could use this for our logo or like the upload button make it kinda cool like a popup!!*/
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -55,4 +57,8 @@
 .main-img{
   max-width: 100px;
 
+}
+
+.secondary-img{
+  max-width: 100px;
 }
